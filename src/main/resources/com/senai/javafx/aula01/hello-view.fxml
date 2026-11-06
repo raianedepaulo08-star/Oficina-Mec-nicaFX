@@ -1,0 +1,57 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="15.0" style="-fx-background-color:
+linear-gradient(to bottom right,
+ #667eea, #764ba2);"
+      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.senai.javafx.aula01.controllers.HelloController">
+
+    <padding>
+        <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+    </padding>
+
+    <!-- Título -->
+    <Label style="-fx-font-size: 26px;
+         -fx-font-weight: bold;
+                -fx-text-fill: white;" text="Cadastro de Pessoa" />
+
+    <Label style="-fx-font-size: 14px;
+            -fx-text-fill: #eeeeee;" text="Digite seu nome para continuar" />
+
+    <!-- Campo de nome -->
+    <TextField fx:id="digiteAqui" maxWidth="300.0" prefHeight="45.0"
+               promptText="Digite o seu nome" style="-fx-background-color: white;
+         -fx-background-radius: 10px;
+          -fx-border-radius: 10px;
+              -fx-padding: 0 15px;
+               -fx-font-size: 14px;" />
+
+    <!-- Botão -->
+    <Button maxWidth="300.0" onAction="#cadastrarPessoa" prefHeight="45.0" prefWidth="300.0"
+            style="-fx-background-color: #4CAF50;
+                 -fx-text-fill: white;
+                      -fx-font-size: 15px;
+                     -fx-font-weight: bold;
+                            -fx-background-radius: 10px;
+                             -fx-cursor: hand;" text="Cadastrar" />
+
+    <!-- Resultado -->
+    <Label fx:id="nomedaPessoa" style="-fx-font-size: 20px;
+                -fx-font-weight: bold;
+                  -fx-text-fill: white;" />
+
+    <Label fx:id="welcomeText" style="-fx-font-size: 14px;
+             -fx-text-fill: #eeeeee;" />
+
+    <Button
+            text="Cadastrar veículo"
+            onAction="#cadastrarVeiculo"
+    />
+</VBox>
+
